@@ -5,7 +5,7 @@ const config = require("./config.json");
 
 client.on("ready", () => {
 	process.stdout.write(client.user.username + " Online! Logged in as " + client.user.tag + "\n");
-	process.stdout.write("Test");
+	process.stdout.write("Version = 0.1\n");
   //console.log("Lillette Online! Logged in as " + client.user.tag);
 
 });
@@ -22,9 +22,6 @@ client.on("message", (message) => {
 const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
-      if (command === "test") {
-       message.channel.send("Update confirmed: V0.1");
-  }
 
 //Admin commands
   //if(message.author.id !== config.ownerID) return;
