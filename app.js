@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 
 client.on("ready", () => {
-	process.stdout.write(client.user.username + " Online! Logged in as " + client.user.tag + "\n");
+	process.stdout.write(client.user.username + " Online! Logged in as " + client.user.tag + "\nEdit test");
   //console.log("Lillette Online! Logged in as " + client.user.tag);
 
 });
